@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<div>
+  {% for student in students_list %}
+    <div class="firstname">
+        <h3>{{ student.firstname|capfirst }}</h3>
+
+      <p>{{ student.lastname }}</p>
+
+    </div>
+  {% endfor %}
+</div>
+{% endblock %}
